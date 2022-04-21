@@ -1167,7 +1167,7 @@
     "@embroider/shared-internals" "^1.6.0"
     semver "^7.3.5"
 
-"@embroider/macros@^1.0.0":
+"@embroider/macros@1.6.0", "@embroider/macros@^1.0.0", "@embroider/macros@^1.5.0":
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/@embroider/macros/-/macros-1.6.0.tgz#2b764f965c645fdcfbf05897c88195368b046ba1"
   integrity sha512-yUEXJGJGP3rjtxorxrbkdxriBFEwnmzOrNk4zK64IXKBfyRjiDZFUHV9DSTrbaYLS29Mw5yK73ZIwi8L13C4Zw==
@@ -1194,6 +1194,15 @@
     resolve-package-path "^4.0.1"
     semver "^7.3.5"
     typescript-memoize "^1.0.1"
+
+"@embroider/util@^0.39.1 || ^0.40.0 || ^0.41.0 || ^1.0.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@embroider/util/-/util-1.6.0.tgz#6a817dfd5192afaab41e80ebce623d5812b30985"
+  integrity sha512-oUQDAMiAATHsiNwEMH/SzNSQ/Z5wDr9f6NImsDIFLvDT6T34/p7cqR4wyfrfMRtcc1EB6PbwhZ6bXYsJ6QPWRA==
+  dependencies:
+    "@embroider/macros" "1.6.0"
+    broccoli-funnel "^3.0.5"
+    ember-cli-babel "^7.23.1"
 
 "@eslint/eslintrc@^0.4.3":
   version "0.4.3"
@@ -2867,7 +2876,7 @@ broccoli-funnel@^2.0.0, broccoli-funnel@^2.0.1, broccoli-funnel@^2.0.2:
     symlink-or-copy "^1.0.0"
     walk-sync "^0.3.1"
 
-broccoli-funnel@^3.0.3, broccoli-funnel@^3.0.8:
+broccoli-funnel@^3.0.3, broccoli-funnel@^3.0.5, broccoli-funnel@^3.0.8:
   version "3.0.8"
   resolved "https://registry.yarnpkg.com/broccoli-funnel/-/broccoli-funnel-3.0.8.tgz#f5b62e2763c3918026a15a3c833edc889971279b"
   integrity sha512-ng4eIhPYiXqMw6SyGoxPHR3YAwEd2lr9FgBI1CyTbspl4txZovOsmzFkMkGAlu88xyvYXJqHiM2crfLa65T1BQ==
@@ -4216,6 +4225,16 @@ elliptic@^6.5.3:
     minimalistic-assert "^1.0.1"
     minimalistic-crypto-utils "^1.0.1"
 
+ember-animated@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/ember-animated/-/ember-animated-1.0.2.tgz#4b4cf161de1a35584c74fc58dbecce15046cd7bc"
+  integrity sha512-Ei+2BifGty4zJ7TFJ+tTuGupjLJsf+PQ8oe/9KvjiBnXE7pnLV7NFM+MuZHc4tAocHw6PTDbGmEVfLuQp/oEEQ==
+  dependencies:
+    "@embroider/addon-shim" "^1.5.0"
+    "@embroider/macros" "^1.5.0"
+    assert-never "^1.2.1"
+    ember-element-helper "^0.5.0 || ^0.6.0"
+
 ember-auto-import@^1.11.3:
   version "1.12.1"
   resolved "https://registry.yarnpkg.com/ember-auto-import/-/ember-auto-import-1.12.1.tgz#09967bd35cd56ac45f413c48deabf7cfb3a785f6"
@@ -4719,6 +4738,15 @@ ember-destroyable-polyfill@^2.0.3:
     ember-cli-babel "^7.22.1"
     ember-cli-version-checker "^5.1.1"
     ember-compatibility-helpers "^1.2.1"
+
+"ember-element-helper@^0.5.0 || ^0.6.0":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/ember-element-helper/-/ember-element-helper-0.6.1.tgz#a6fbc5be5f875b5c864ae61bf5c5f81d6de6d936"
+  integrity sha512-YiOdAMlzYul4ulkIoNp8z7iHDfbT1fbut/9xGFRfxDwU/FmF8HtAUB2f1veu/w50HTeZNopa1OV2PCloZ76XlQ==
+  dependencies:
+    "@embroider/util" "^0.39.1 || ^0.40.0 || ^0.41.0 || ^1.0.0"
+    ember-cli-babel "^7.26.11"
+    ember-cli-htmlbars "^6.0.1"
 
 ember-export-application-global@^2.0.1:
   version "2.0.1"
